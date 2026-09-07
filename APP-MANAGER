@@ -8,16 +8,6 @@ AMREPO="https://raw.githubusercontent.com/ivan-hc/AM/main"
 # Determine if AM is an AppImage
 IS_APPIMAGE=$([[ -n "$APPIMAGE" && -f "$APPIMAGE" ]] && [[ -n "$APPDIR" && -d "$APPDIR" && -f "$APPDIR/AppRun" ]] && echo 1) || unset IS_APPIMAGE
 
-# Determine if AM is installed, trigger install script if AppImage
-if ! command -v am >/dev/null 2>&1 && ! command -v appman >/dev/null 2>&1; then
-	if [ -n "$IS_APPIMAGE" ]; then
-		"$APPDIR"/AM-INSTALLER
-	else
-		printf $"AM/Appman is not installed. For installation instructions, please visit https://github.com/ivan-hc/AM\n"
-	fi
-	exit 0
-fi
-
 # Determine the name of this script and its working directory
 export REALDIR="$PWD"
 if [ -n "$IS_APPIMAGE" ]; then
