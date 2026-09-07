@@ -205,11 +205,11 @@ else
 	    fi
 	    for TERM_CMD in x-terminal-emulator\ -e gnome-terminal\ -- konsole\ -e xfce4-terminal\ -e mate-terminal\ -e lxterminal\ -e terminator\ -e urxvt\ -e xterm\ -e; do
 	        if command -v "\$(echo "\$TERM_CMD" | cut -d' ' -f1)" >/dev/null 2>&1; then
-	            exec \$TERM_CMD sh -c "\$AM_EXEC_CMD; echo; echo Press CTRL+C to close this window...; sleep 1h"
+	            exec \$TERM_CMD sh -c "\$AM_EXEC_CMD; printf '\nPress CTRL+C to close this window...\n'; sleep 1h"
 	        fi
 	    done
 	else
-	    if [ "\$1" = "setup" ]; then
+	    if [ "\$1" = "setup" ] && ! command -v am >/dev/null 2>&1 && ! command -v appman >/dev/null 2>&1 && [ ! -e /opt/am/APP-MANAGER ]; then
 	        exec "\$HERE/AM-INSTALLER"
 	    else
 	        exec "\$HERE$EXEC" "\$@"
