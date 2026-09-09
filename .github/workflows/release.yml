@@ -1,11 +1,12 @@
-# This is a basic workflow that is manually triggered
+name: Release
 
-name: Release workflow
-
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
 on:
   workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag (e.g., v1.0.0)'
+        required: true
+        type: string
 
 jobs:
   release:
@@ -21,5 +22,6 @@ jobs:
       - name: Create Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "workdir/*"
+          tag: ${{ github.event.inputs.tag }}
+          artifacts: "*.AppImage,*.AppImage.zsync"
           token: ${{ secrets.GITHUB_TOKEN }}
