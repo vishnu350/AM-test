@@ -27,5 +27,6 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           tag: ${{ github.event.inputs.tag }}
+          body: Latest development build with continuous improvements. See [recent commits](https://github.com/${{ github.repository }}/commits/main) for details.
           artifacts: "*.AppImage,*.AppImage.zsync"
           token: ${{ secrets.GITHUB_TOKEN }}
