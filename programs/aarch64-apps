@@ -285,6 +285,7 @@
 ◆ md5sum : Compute and check MD5 message digest. This is part of "am-utils" suite.
 ◆ melonds-enhanced : Unofficial, AppImage of melonDS which is able to work on any linux distro.
 ◆ meru : Unofficial Gmail desktop app.
+◆ meshtastic-android : The Meshtastic client for Android and Compose Desktop — an app for communicating over open-source mesh radios.
 ◆ mgba-enhanced : Unofficial, Game Boy Advance Emulator.
 ◆ mini-vmac : Unofficial, a miniature Macintosh 68K emulator.
 ◆ miniter : Rust based non-linear video editor for basic tasks.
@@ -300,6 +301,7 @@
 ◆ mousai : Unofficial. Application for identifying songs using libre utilities.
 ◆ mpv-nightly : Unofficial nightly build, A free, open source, and cross-platform media player.
 ◆ mpz : Folder player for big local music collections.
+◆ multica : Assign issues to Claude Code, Codex, Cursor, and 17 more coding agents like teammates — open-source and self-hostable. Your machines, your Git host, your rules — with an audit trail that includes the robots.
 ◆ muon-pdf : Touchscreen-first lightweight PDF reader with fast tap/swipe page turns, made for music sheets and books on tablets.
 ◆ music-assistant : The desktop companion app for Music Assistant.
 ◆ mv : Move (rename) files. This is part of "am-utils" suite.
@@ -333,6 +335,7 @@
 ◆ odamex : Unofficial, Online Multiplayer Doom port with a strong focus on the original gameplay while providing a breadth of enhancements.
 ◆ offline-translator : Qt based app for text and image translation completely offline using on-device Firefox translation models.
 ◆ okteta : Unofficial. Hex editor for viewing and editing the raw data of files.
+◆ oleafly : The local-first AI assisted research workspace for scientific writing & publishing.
 ◆ omniget : Media downloader from various websites.
 ◆ open-video-downloader : A cross-platform GUI for youtube-dl made in Rust with Tauri and Vue + Typescript.
 ◆ openclaw : Unofficial, reimplementation of Captain Claw (1997) platformer.
@@ -351,12 +354,14 @@
 ◆ opentyrian2000 : Unofficial, an open-source port of the DOS shoot-em-up Tyrian.
 ◆ optiimage : Unofficial, optimize your images with OptiImage, a useful image compressor that supports PNG, JPEG, WebP and SVG file types.
 ◆ oras : OCI registry client managing content like artifacts, images, packages.
+◆ orca : The ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS.
 ◆ oryxis : Rust SSH Client & Terminal Emulator with an encrypted vault, SFTP, port forwarding, cloud discovery, and P2P sync.
 ◆ oversteer : Unofficial, Steering Wheel Manager for Linux.
 ◆ overte : Overte open source virtual worlds platform.
 ◆ pandoc : Universal markup converter.
 ◆ paste : Merge lines of files. This is part of "am-utils" suite.
 ◆ pathchk : File names are valid or portable. This is part of "am-utils" suite.
+◆ pawse : A fast, native music player for your local library, built in Rust and GPUI, with a buttery-smooth, customizable 120+ fps interface, exclusive (bit-perfect) output, and a rich feature set.
 ◆ pcexhumed : Unofficial, port of the PC version of Exhumed based on EDuke32.
 ◆ pcsx-redux-enhanced : Unofficial, modern fork of the pcsxr PlayStation 1 emulator focused on reverse engineering and homebrew development.
 ◆ pdf-arranger : Unofficial, a small python-gtk application, which helps the user to merge or split PDF documents and rotate, crop and rearrange their pages.
@@ -532,6 +537,7 @@
 ◆ uptime : Tell how long the system has been running.. This is part of "am-utils" suite.
 ◆ users : Print the user names of users currently logged in to the. This is part of "am-utils" suite.
 ◆ uv : An extremely fast Python package and project manager, written in Rust.
+◆ v2rayn : A GUI client for Windows, Linux and macOS, support Xray and sing-box and others.
 ◆ vacuumtube : YouTube Leanback on the desktop, with enhancements.
 ◆ varia : Unofficial. Aria2-based advanced download manager with support for downloading files, torrents, video and audio + support for Chromium and Firefox extension.
 ◆ vdir : List directory contents. This is part of "am-utils" suite.
@@ -581,6 +587,7 @@
 ◆ zap : Delightful command line AppImage package manager for appimage.github.io.
 ◆ zapzap-enhanced : Unofficial AppImage of ZapZap WhatsApp client.
 ◆ zcat : Zcat - compress or expand files. This is part of "am-utils" suite.
+◆ zcode : ZCode is next-gen vibe coding for complex goals—with multiple agents and control from anywhere.
 ◆ zedis : A blazing-fast, native Redis GUI built with Rust and GPUI.
 ◆ zelda64-recompiled : Unofficial, a native port of the N64 Legend of Zelda games, statically recompiled.
 ◆ zennotes : Keyboard-first local Markdown notes with Vim motions, diagrams, and MCP integration.
