@@ -7,6 +7,11 @@ on:
         description: 'Release tag (e.g. 10.5.1)'
         required: true
         type: string
+      message:
+        description: 'Release message'
+        required: false
+        type: string
+        default: 'Latest build. See commits for detailed changes: https://github.com/ivan-hc/AM/commits/main'
 
 jobs:
   release:
@@ -23,5 +28,6 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           tag: ${{ github.event.inputs.tag }}
+          body: "Latest build. See commits for detailed changes: https://github.com/ivan-hc/AM/commits/main"
           artifacts: "*.AppImage,*.AppImage.zsync"
           token: ${{ secrets.GITHUB_TOKEN }}
