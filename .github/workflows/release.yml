@@ -11,9 +11,6 @@ on:
         description: 'Release message'
         required: false
         type: string
-        default: |
-            Latest development build with continuous improvements.
-            See commits for detailed changes: https://github.com/ivan-hc/AM/commits/main'
 
 jobs:
   release:
