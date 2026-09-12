@@ -80,7 +80,6 @@ jobs:
     # Triggered by a manually published GitHub release (ivan-hc pushes a new
     # version, writing the release notes himself): build from that tag and
     # attach the AppImages to that very release.
-    if: ${{ github.event_name == 'release' }}
     needs: [build]
     permissions: write-all
     runs-on: ubuntu-latest
