@@ -94,7 +94,6 @@ jobs:
           tag: ${{ github.event.inputs.tag }}
           name: "\"AM\" ${{ github.event.inputs.tag }}"
           body: Latest development build with continuous improvements. See [recent commits](https://github.com/${{ github.repository }}/commits/main) for details.
-          body: Latest development build with continuous improvements. See [recent commits](https://github.com/${{ github.repository }}/commits/main) for details.
           files: |
             *.AppImage
             *.AppImage.zsync
