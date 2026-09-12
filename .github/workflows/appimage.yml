@@ -91,7 +91,9 @@ jobs:
       - name: Attach AppImages to the release
         uses: softprops/action-gh-release@5be0e66d93ac7ed76da52eca8bb058f665c3a5fe # v2.4.2
         with:
-          tag_name: ${{ github.event.release.tag_name }}
+          tag: ${{ github.event.inputs.tag }}
+          name: "\"AM\" ${{ github.event.inputs.tag }}"
+          body: Latest development build with continuous improvements. See [recent commits](https://github.com/${{ github.repository }}/commits/main) for details.
           body: Latest development build with continuous improvements. See [recent commits](https://github.com/${{ github.repository }}/commits/main) for details.
           files: |
             *.AppImage
