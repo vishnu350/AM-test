@@ -5,7 +5,7 @@ set -eu
 ARCH=$1
 VERSION=$2
 export ARCH VERSION
-export OUTPATH=./dist
+export OUTPATH=dist
 export ADD_HOOKS="self-updater.hook"
 export GITHUB_REPOSITORY="https://github.com/ivan-hc/AM"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
@@ -40,5 +40,5 @@ quick-sharun "$APPDIR"
 quick-sharun --make-appimage
 
 # Test the app for 12 seconds
-quick-sharun --simple-test ./dist/*.AppImage
+quick-sharun --simple-test dist/*.AppImage
 
