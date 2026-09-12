@@ -88,13 +88,12 @@ jobs:
         with:
           pattern: AppImage-*
           merge-multiple: true
-      - uses: actions/checkout@v4
-      - name: Create Release
-        uses: ncipollo/release-action@v1
+      - name: Attach AppImages to the release
+        uses: softprops/action-gh-release@5be0e66d93ac7ed76da52eca8bb058f665c3a5fe # v2.4.2
         with:
-          tag: ${{ github.event.inputs.tag }}
-          name: "\"AM\" ${{ github.event.inputs.tag }}"
+          tag_name: ${{ github.event.release.tag_name }}
           body: Latest development build with continuous improvements. See [recent commits](https://github.com/${{ github.repository }}/commits/main) for details.
-          artifacts: "*.AppImage,*.AppImage.zsync"
-          token: ${{ secrets.GITHUB_TOKEN }}
+          files: |
+            *.AppImage
+            *.AppImage.zsync
 
