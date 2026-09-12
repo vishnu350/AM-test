@@ -34,11 +34,11 @@ cp /bin/chown "$APPDIR"/bin/chown
 chmod a+x "$APPDIR"/bin/*
 
 # Deploy dependencies
-appimage/quick-sharun.sh "$APPDIR"
+quick-sharun "$APPDIR"
 
 # Turn AppDir into AppImage
-appimage/quick-sharun.sh --make-appimage
+quick-sharun --make-appimage
 
 # Test the app for 12 seconds
-appimage/quick-sharun.sh --simple-test ./dist/*.AppImage
+quick-sharun --simple-test ./dist/*.AppImage
 
