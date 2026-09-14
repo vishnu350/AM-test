@@ -7,6 +7,7 @@ VERSION=$2
 export ARCH VERSION
 export OUTPATH=dist
 #export ADD_HOOKS="self-updater.hook"
+export USE_HOST_XDG_CACHE_HOME=1
 export GITHUB_REPOSITORY="https://github.com/ivan-hc/AM"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=APP-MANAGER.svg
